@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sample Rect Application</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/dist/css/style.css">
+    </head>
+    <body>
+        <div id="p1">
+        </div>
+        <div class="person">
+            <h1>Venkat</h1>
+            <p>Your Age: 28</p>
+        </div>
+        <div class="person">
+                <h1>Mani</h1>
+                <p>Your Age: 29</p>
+        </div>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+        <script type="text/babel">
+        //const Header=React.createElement('h1',null,'Hello world from react');
+        //ReactDOM.render(Header,document.getElementById('p1'));
+
+        // const Header =<h1>Hello World using JSX</h1>
+        // ReactDOM.render(Header,document.getElementById('p1'));
+        function Person(){
+            return <h1>I am born from JSX</h1>
+        }
+        ReactDOM.render(<Person />,document.getElementById('p1'));
+        </script>
+    </body>
+</html>
